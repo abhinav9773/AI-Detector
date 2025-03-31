@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TruthLens - AI Fake News Detector</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">TruthLens</h1>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#checker">Check News</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h2>AI-Powered Fake News & Misinformation Detection System</h2>
+        <p>Detect misinformation with cutting-edge AI technology.</p>
+        <button onclick="scrollToChecker()">Start Checking</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="checker" class="checker">
+        <h2>Check News Credibility</h2>
+        <div class="analyze-box">
+          <input
+            type="text"
+            id="newsInput"
+            placeholder="Enter news URL or text"
+          />
+          <button onclick="analyzeNews()">Analyze</button>
+        </div>
+        <p id="result"></p>
+      </section>
+
+      <section id="features" class="features">
+        <h2>Key Features</h2>
+        <div class="features-container">
+          <div class="feature-card">
+            ✅ <strong>Real-time News Analysis</strong><br />
+            Users can input URLs or text to check credibility.
+          </div>
+          <div class="feature-card">
+            ✅ <strong>AI-Based Fact Checking</strong><br />
+            Compares claims with trusted sources.
+          </div>
+          <div class="feature-card">
+            ✅ <strong>Bias & Sentiment Analysis</strong><br />
+            Detects biased reporting.
+          </div>
+          <div class="feature-card">
+            ✅ <strong>Browser Extension</strong><br />
+            Highlights misinformation while browsing.
+          </div>
+          <div class="feature-card">
+            ✅ <strong>Fake Image Detection</strong><br />
+            Detects AI-generated or manipulated images.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
