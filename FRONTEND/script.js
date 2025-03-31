@@ -13,11 +13,12 @@ async function analyzeNews() {
 
   try {
     // Send a request to the backend API
-    let response = await fetch("http://localhost:5000/api/news/analyze", {
+    let response = await fetch("http://localhost:8000/api/news/analyze", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: input }), // Sending user input to backend
+      body: JSON.stringify({ text: input }),
     });
+    
 
     let data = await response.json(); // Get response from backend
 
